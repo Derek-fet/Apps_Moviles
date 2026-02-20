@@ -1,0 +1,13 @@
+<p>component1 works!</p>
+{{ nombre }}
+<button (click)="cambiarnombre()">Cambiar Nombre</button>
+    <br>
+    
+<label>Tarea</label>
+    <input type="text" [(ngModel)]="tarea" placeholder="">
+    <button type="button" (click)="agregar()">agregar</button>
+    <h1>Lista</h1>
+
+    <ul id="lista">
+        <li *ngFor="let item of lista">{{ item }}</li>
+    </ul>

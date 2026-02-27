@@ -1,0 +1,22 @@
+@for (pokemon of pokemonList(); track pokemon.id) {
+  <div style="display: flex; gap: 20px; margin: 20px 0;">
+    <img [src]="getSprite(pokemon)" [alt]="pokemon.name" style="width: 150px; height: 150px;" />
+    <div>
+      <h3>{{ pokemon.name }}</h3>
+      <p>#{{ pokemon.id }}</p>
+      
+      <div>
+        @for (typeObj of pokemon.types; track typeObj.type.name) {
+          <span>{{ typeObj.type.name }}</span>
+        }
+      </div>
+
+      <div>
+        <p>HP: {{ pokemon.stats[0].base_stat }}</p>
+        <p>ATK: {{ pokemon.stats[1].base_stat }}</p>
+        <p>DEF: {{ pokemon.stats[2].base_stat }}</p>
+      </div>
+    </div>
+  </div>
+}
+

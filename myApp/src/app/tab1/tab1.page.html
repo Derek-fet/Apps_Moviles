@@ -1,0 +1,119 @@
+<ion-app>
+
+  <!-- HEADER -->
+  <ion-header>
+    <ion-toolbar color="primary">
+      <ion-title>App de Componentes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- CONTENIDO -->
+  <ion-content class="ion-padding">
+
+    <!-- TEXTO E INPUT -->
+    <ion-item>
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input></ion-input>
+    </ion-item>
+
+    <!-- BOTÓN -->
+    <ion-button expand="block">Enviar</ion-button>
+
+    <!-- LISTA -->
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Usuario 1</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="person" slot="start"></ion-icon>
+        <ion-label>Usuario 2</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <!-- CARD -->
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Tarjeta</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Este es un ejemplo de card.
+      </ion-card-content>
+    </ion-card>
+
+    <!-- GRID -->
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+          <ion-button expand="block" color="secondary">Col 1</ion-button>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button expand="block" color="tertiary">Col 2</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <!-- FORMULARIOS -->
+    <ion-item>
+      <ion-label>Activar</ion-label>
+      <ion-toggle></ion-toggle>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Opciones</ion-label>
+      <ion-select placeholder="Selecciona">
+        <ion-select-option value="1">Opción 1</ion-select-option>
+        <ion-select-option value="2">Opción 2</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item>
+      <ion-checkbox slot="start"></ion-checkbox>
+      <ion-label>Acepto términos</ion-label>
+    </ion-item>
+
+    <!-- RANGE -->
+    <ion-item>
+      <ion-label>Volumen</ion-label>
+      <ion-range min="0" max="100"></ion-range>
+    </ion-item>
+
+    <!-- PROGRESS -->
+    <ion-progress-bar value="0.5"></ion-progress-bar>
+
+    <!-- BADGE -->
+    <ion-badge color="danger">Nuevo</ion-badge>
+
+    <!-- CHIP -->
+    <ion-chip>
+      <ion-label>Etiqueta</ion-label>
+    </ion-chip>
+
+    <!-- AVATAR -->
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://i.pravatar.cc/100">
+      </ion-avatar>
+      <ion-label>Perfil</ion-label>
+    </ion-item>
+
+    <!-- IMG -->
+    <ion-img src="https://via.placeholder.com/150"></ion-img>
+
+    <!-- FAB BUTTON -->
+    <ion-fab vertical="bottom" horizontal="end">
+      <ion-fab-button>
+        <ion-icon name="add"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+
+  </ion-content>
+
+  <!-- FOOTER -->
+  <ion-footer>
+    <ion-toolbar>
+      <ion-title size="small">Footer</ion-title>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-app>
